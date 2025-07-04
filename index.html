@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <form class="form_container">
-        <fieldset>
-            <legend>Main informaition</legend>
-
-            <label class="form_label" for="fullName">Full Name</label>
-            <input class="form_input" type="text" name="name_and_surname" id="fullName">
-
-            <label class="form_label" for="email">Email address</label>
-            <input class="form_input" type="text" name="email" id="email">
-
-            <label class="form_label" for="age">Age</label>
-            <input class="form_input" type="number" min="1" name="age" id="age">
+        <fieldset class="form_field">
+            <legend class="field_name">Main informaition</legend>
+            <div>
+                <label class="form_label" for="fullName">Full Name</label>
+                <input class="form_input" type="text" name="name" id="fullName">
+            </div>
+            <div>
+                <label class="form_label" for="email">Email address</label>
+                <input class="form_input" type="text" name="email" id="email">
+            </div>
+            <div>
+                <label class="form_label" for="age">Age</label>
+                <input class="form_input" type="number" min="1" name="age" id="age">
+            </div>
         </fieldset>
-        <fieldset>
-            <legend>Hobbies</legend>
-            <label class="form_label" for="hobbies">Age</label>
-            <input class="form_input" type="text" name="hobbies" id="hobbies">
-            <button class="checkBtn" id="hobbyAddBtn"><img src="./media/check-symbol-isolated/9135401.png" alt="check symbol"></button>
+        <fieldset class="form_field">
+            <legend class="field_name">Hobbies</legend>
+            <div>
+                <label class="form_label" for="hobbies">Add your hobbies</label>
+                <div class="hobbies_input_container">
+                    <input class="form_input" type="text" name="hobbies" id="hobbies">
+                    <button class="checkBtn" id="hobbyAddBtn">
+                        <img src="./media/check-symbol-isolated/9135401.png" alt="check symbol">
+                    </button>
+                </div>
+            </div>
             <div class="hobbyList"></div>            
         </fieldset>
         <button class="form_submit_btn" type="submit">Submit</button>
