@@ -1,0 +1,13 @@
+.pop{
+    position: relative;
+    background-color: red;
+    border: 1px #000 solid;
+    border-radius: 0.4rem;
+    width: 30vw;
+    min-height: 1rem;
+    padding: 1rem;
+}
+
+.hidden {
+    display: none;
+}

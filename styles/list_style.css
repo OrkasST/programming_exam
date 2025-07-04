@@ -1,0 +1,25 @@
+.list-container {
+    /* position: relative;
+    left: 50%;
+    transform: translate(-50%); */
+    
+    width: 50rem;
+
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    justify-items: center;
+    align-items: center;
+
+    bottom: 2rem;
+}
+
+.user_card {
+    padding: 0.7rem 1.3rem;
+    background: rgba(255, 255, 255, 0.518);
+    backdrop-filter: blur(0.6px);
+    box-shadow: 0 0 0.5rem 0.1rem rgba(45,45,45,0.7);
+    border-radius: 0.2rem;;
+}

@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/list_style.css">
+    <link rel="stylesheet" href="./styles/error_popup.css">
 </head>
-<body>
-    <form class="form_container">
-        <fieldset class="form_field">
-            <legend class="field_name">Main informaition</legend>
-            <div>
-                <label class="form_label" for="fullName">Full Name</label>
-                <input class="form_input" type="text" name="name" id="fullName">
-            </div>
-            <div>
-                <label class="form_label" for="email">Email address</label>
-                <input class="form_input" type="text" name="email" id="email">
-            </div>
-            <div>
-                <label class="form_label" for="age">Age</label>
-                <input class="form_input" type="number" min="1" name="age" id="age">
-            </div>
-        </fieldset>
-        <fieldset class="form_field">
-            <legend class="field_name">Hobbies</legend>
-            <div>
-                <label class="form_label" for="hobbies">Add your hobbies</label>
-                <div class="hobbies_input_container">
-                    <input class="form_input" type="text" name="hobbies" id="hobbies">
-                    <button class="checkBtn" id="hobbyAddBtn">
-                        <img src="./media/check-symbol-isolated/9135401.png" alt="check symbol">
-                    </button>
-                </div>
-            </div>
-            <div class="hobbyList"></div>            
-        </fieldset>
-        <button class="form_submit_btn" type="submit">Submit</button>
-    </form>
-    <section class="list-container">
 
-    </section>
+<body>
+    <main class="content">
+        <section class="pop hidden">
+
+        </section>
+        <form class="form_container" id="userInfo">
+            <fieldset class="form_field">
+                <legend class="field_name">Main informaition</legend>
+                <div class="input_container">
+                    <label class="form_label" for="fullName">Full Name</label>
+                    <input class="form_input" type="text" name="full name" id="fullName">
+                </div>
+                <div class="input_container">
+                    <label class="form_label" for="email">Email address</label>
+                    <input class="form_input" type="email" name="email" id="email">
+                </div>
+                <div class="input_container">
+                    <label class="form_label" for="age">Age</label>
+                    <input class="form_input" type="number" min="1" name="age" id="age">
+                </div>
+            </fieldset>
+            <fieldset class="form_field">
+                <legend class="field_name">Hobbies</legend>
+                <div>
+                    <label class="form_label" for="hobbies">Add your hobbies</label>
+                    <div class="hobbies_input_container">
+                        <input class="form_input" type="text" name="hobbies" id="hobbies">
+                        <button class="checkBtn" id="hobbyAddBtn">
+                            <img src="./media/check-symbol-isolated/9135401.png" alt="check symbol">
+                        </button>
+                    </div>
+                </div>
+                <div class="hobbyList">
+                    
+                </div>
+            </fieldset>
+            <button class="form_submit_btn" type="submit">Submit</button>
+        </form>
+        <section class="list-container">
+            
+            
+        </section>
+    </main>
+
+    <script src="./scripts/script.js"></script>
 </body>
+
 </html>

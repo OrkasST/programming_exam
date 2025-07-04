@@ -5,11 +5,24 @@
     font-size: 14pt;
 }
 
+.content {
+    background: fixed;
+    background-image: url("../media/background/freenaturestock-2277.jpg");
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3rem 0;
+}
+
 .form_container {
-    position: absolute;
+    background: transparent;
+    /* position: relative;
     left: 50%;
     top: 5vh;
-    transform: translate(-50%);
+    transform: translate(-50%); */
     width: 70vw;
 
     display: flex;
@@ -28,8 +41,12 @@
 
     width: 30vw;
 
-    border: 1px solid #000;
+    border: 1px solid #6a6a6a;
     border-radius: 1rem;
+
+    background: rgba(255, 255, 255, 0.518);
+    backdrop-filter: blur(0.6px);
+    box-shadow: 0 0 1rem 0.4rem rgba(45,45,45,0.3);
 }
 .field_name {
     width: 10rem;
@@ -37,16 +54,19 @@
     text-align: center;
     border-right: 1px solid #000;
     border-left: 1px solid #000;
+    background-color: #ffffffb5;
+    box-shadow: 0 0 0.8rem 0.4rem rgba(33, 33, 33, 0.4);
 }
 
 .form_label {
     display: block;
+    font-size: 14pt;
 }
 .form_input {
     padding: 0.3rem 0.8rem;
+    font-size: 11pt;
+    width: 28vw;
 }
-
-
 
 .hobbies_input_container {
     display: flex;
@@ -56,14 +76,56 @@
     position: relative;
     width: 2rem;
     height: 2rem;
+    background: #ffffff;
+    border: 1px solid #202020b3;
 }
-.checkBtn img {
+.checkBtn:hover {
+    background: #ffdec0;
+    box-shadow: 0 0 0.4rem 0.2rem rgba(33, 33, 33, 0.4);
+    transform: scale(1.05);
+}
+.checkBtn:active{
+    background: #ffffff;
+    box-shadow: none;
+    transform: scale(1);
+}
+
+.checkBtn img, .removeBtn img {
     width: 100%;
     height: 100%;
 }
 
+.hobbyList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+.hobby {
+    border: 1px solid #7c7777;
+    border-radius: 0.1rem;
+    padding: 0.1rem 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    background-color: #e0e3b5;
+}
 
 .form_submit_btn {
     width: 10vw;
     height: 2rem;
+    background: #d0d0d091;
+    border: 1px solid #202020b3;
+}
+.form_submit_btn:hover {
+    background: #dcdcdc32;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 0.4rem 0.2rem rgba(33, 33, 33, 0.4);
+    transform: scale(1.05);
+}
+.form_submit_btn:active{
+    background: #d0d0d091;
+    backdrop-filter: blur(0px);
+    box-shadow: none;
+    transform: scale(1);
 }
